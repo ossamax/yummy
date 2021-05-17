@@ -1,0 +1,155 @@
+.hero {
+  padding: 5rem 0 0;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.938),
+      rgba(0, 0, 0, 0.932)
+    ),
+    url("https://assets.website-files.com/5d5ffc98b6d68de20504403c/5d6b9bcc068031b0bd901c96_chalkboard-texture.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .wrapper {
+    height: 100%;
+    padding: 3rem 0rem 2.5rem;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.22),
+        rgba(0, 0, 0, 0.22)
+      ),
+      url("../../images/hero.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0rem;
+    width: 100%;
+    .wrapper_wrapper {
+      width: 95%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .opening_hours_wrapper {
+        font-family: $blinker;
+        @media screen and (min-width: 900px) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 3rem;
+        }
+        .hours {
+          color: hsla(0, 0%, 96.9%, 0.5);
+          text-align: center;
+          letter-spacing: 4px;
+          font-size: 0.65rem;
+          font-weight: 600;
+          span {
+            color: $yellow;
+          }
+        }
+        .social_media_links {
+          @media screen and (max-width: 900px) {
+            display: none;
+          }
+          display: flex;
+          div {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0.2rem;
+            &:hover {
+              background-color: rgb(243, 189, 12);
+            }
+            img {
+              width: 45%;
+            }
+          }
+        }
+      }
+      .hero_main_images {
+        font-family: $teko;
+        font-size: 3.8rem;
+        color: white;
+        @media screen and (min-width: 900px) {
+          display: flex;
+          align-items: center;
+          font-size: 5.5rem;
+        }
+        h1 {
+          z-index: 2;
+          font-weight: 700;
+          line-height: 1.6;
+          position: relative;
+          @media screen and (min-width: 900px) {
+            position: initial;
+          }
+        }
+        .hero_img_wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @media screen and (min-width: 900px) {
+          }
+          .bg-1 {
+            border-radius: 100%;
+            width: 220px;
+            margin: auto;
+            position: relative;
+            z-index: 3;
+            box-shadow: 0px 2px 30px rgba(5, 5, 5, 0.466);
+            animation: rotateZbg-1 20s ease infinite;
+            transition: 3s ease-in-out;
+          }
+          .bg-2 {
+            width: 350px;
+            position: absolute;
+            z-index: 1;
+            animation: rotateZbg-2 20s ease infinite;
+            transition: 3s ease-in-out;
+          }
+        }
+        .yummy {
+          top: 4rem;
+        }
+        .tummy {
+          color: $yellow;
+          bottom: 3rem;
+        }
+      }
+      .reservation {
+        font-family: $blinker;
+        margin-bottom: 2rem;
+        .reservation_phone {
+          color: hsla(0, 0%, 96.9%, 0.5);
+          text-align: center;
+          letter-spacing: 4px;
+          font-size: 0.65rem;
+          font-weight: 600;
+          span {
+            color: $yellow;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotateZbg-1 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes rotateZbg-2 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}

@@ -1,0 +1,215 @@
+.navigation {
+  background-color: $black;
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("../../images/navigation_background.jpg");
+  background-position: bottom bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.288);
+  .wrapper {
+    padding: 1rem 0rem;
+    @media screen and (min-width: 980px) {
+      padding: 1.5rem 1rem;
+    }
+    .main_nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.5s ease-in-out;
+      .nav_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo_img_wrapper {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #edb408;
+          img {
+            width: 20px;
+          }
+        }
+        div {
+          font-family: $teko;
+          color: white;
+          font-weight: 700;
+          font-size: 1.8rem;
+          margin-left: 0.5rem;
+        }
+      }
+      .main_nav_links {
+        text-align: center;
+        transition: 0.4s ease-in-out;
+        a {
+          color: white;
+          font-size: 0.8rem;
+          font-family: $blinker;
+          margin: 0 1.2rem;
+          transition: 0.3s ease-in-out;
+          font-weight: 550;
+          letter-spacing: 2px;
+          @media screen and (max-width: 980px) {
+            display: inline-block;
+            margin: 0.7rem 0;
+            padding: 0 0.6rem;
+          }
+          &:hover {
+            color: rgba(255, 255, 255, 0.445);
+          }
+        }
+        @media screen and (max-width: 980px) {
+          padding: 1.2rem 3rem;
+          box-shadow: 0px 0px 1px white;
+          background-image: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0.75),
+              rgba(0, 0, 0, 0.75)
+            ),
+            url("../../images/navigation_background.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: 0.5s ease-in-out;
+          position: fixed;
+          opacity: 0;
+          z-index: -20;
+          top: -10rem;
+          left: 0;
+          right: 0;
+        }
+      }
+      .main_nav_links.active {
+        top: 5.2rem;
+        opacity: 1;
+      }
+      .main_nav_btns_wrapper {
+        display: flex;
+        img {
+          width: 20px;
+        }
+        .burger_menu_icon,
+        .dots_menu_icon {
+          position: relative;
+          background-color: $yellow;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          margin: 0 0.3rem;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            background-color: #edb408;
+          }
+        }
+        .burger_menu_icon {
+          @media screen and (min-width: 980px) {
+            display: none;
+          }
+          .left_close_img {
+            position: absolute;
+            opacity: 0;
+          }
+          .left_close_img.active {
+            opacity: 1;
+          }
+          .bars_img.disactive {
+            opacity: 0;
+          }
+        }
+        .dots_menu_icon {
+          @media screen and (min-width: 980px) {
+            width: 170px;
+            border-radius: 30px;
+          }
+          .dots_wrapper {
+            display: flex;
+            justify-content: space-between;
+            .right_close_img {
+              position: absolute;
+              opacity: 0;
+            }
+            .right_close_img.active {
+              opacity: 1;
+            }
+            .dots_img.disactive {
+              opacity: 0;
+            }
+          }
+          .dots_yummy {
+            color: white;
+            font-family: $teko;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-left: 0.5rem;
+            @media screen and (max-width: 980px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.yummy_wrapper {
+  padding: 1rem 0;
+  box-shadow: 0px 0px 1px white;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("../../images/navigation_background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s ease-in-out;
+  position: fixed;
+  z-index: 99;
+  top: -5rem;
+  left: 0;
+  right: 0;
+  @media screen and (max-width: 980px) {
+    padding: 1.2rem 3rem;
+  }
+  .yummy_menu {
+    text-align: center;
+    a {
+      margin: 0 1.6rem;
+      font-family: $blinker;
+      font-weight: 600;
+      letter-spacing: 2px;
+      color: white;
+      font-size: 0.8rem;
+      @media screen and (max-width: 980px) {
+        margin: 0 0.5rem;
+        padding: 0.5rem 0;
+        display: inline-block;
+      }
+      &:hover {
+        color: rgba(255, 255, 255, 0.445);
+      }
+    }
+  }
+}
+.yummy_wrapper.active {
+  top: 6.2rem;
+  @media screen and (max-width: 980px) {
+    top: 5.2rem;
+  }
+}
