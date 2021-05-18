@@ -337,9 +337,14 @@ li {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 900px) {
+  .hero {
+    height: 650px;
+  }
+}
+
 .hero .wrapper {
   height: 100%;
-  padding: 3rem 0rem 2.5rem;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.22)), to(rgba(0, 0, 0, 0.22))), url("../../images/hero.PNG");
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.22)), url("../../images/hero.PNG");
   background-size: cover;
@@ -455,7 +460,6 @@ li {
 .hero .wrapper .wrapper_wrapper .hero_main_images h1 {
   z-index: 2;
   font-weight: 700;
-  line-height: 1.6;
   position: relative;
 }
 
@@ -495,10 +499,15 @@ li {
   width: 350px;
   position: absolute;
   z-index: 1;
-  -webkit-animation: rotateZbg-2 20s ease infinite;
-          animation: rotateZbg-2 20s ease infinite;
   -webkit-transition: 3s ease-in-out;
   transition: 3s ease-in-out;
+}
+
+@media screen and (min-width: 900px) {
+  .hero .wrapper .wrapper_wrapper .hero_main_images .hero_img_wrapper .bg-2 {
+    -webkit-animation: rotateZbg-2 20s ease infinite;
+            animation: rotateZbg-2 20s ease infinite;
+  }
 }
 
 .hero .wrapper .wrapper_wrapper .hero_main_images .yummy {
@@ -512,7 +521,6 @@ li {
 
 .hero .wrapper .wrapper_wrapper .reservation {
   font-family: "Blinker", sans-serif;
-  margin-bottom: 2rem;
 }
 
 .hero .wrapper .wrapper_wrapper .reservation .reservation_phone {
