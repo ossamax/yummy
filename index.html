@@ -21,13 +21,13 @@
     <link rel="stylesheet" href="Sass/homeStyle/home.css" />
   </head>
   <body>
-    <section class="navigation">
+    <div class="navigation">
       <div class="wrapper">
         <div class="main_nav">
           <a href="index.html">
             <div class="nav_logo">
               <div class="logo_img_wrapper">
-                <img src="images/logo_pizza.svg" alt="yummy brand logo" />
+                <img src="images/logo_pizza.svg" alt="yummy_brand_logo" />
               </div>
               <div>YUMMY</div>
             </div>
@@ -44,20 +44,28 @@
 
           <div class="main_nav_btns_wrapper">
             <div class="burger_menu_icon">
-              <img src="images/menu_close.svg" class="left_close_img" alt="" />
-              <img src="images/bars_mobile-menu.svg" class="bars_img" alt="" />
+              <img
+                src="images/menu_close.svg"
+                class="left_close_img"
+                alt="menu_icons"
+              />
+              <img
+                src="images/bars_mobile-menu.svg"
+                class="bars_img"
+                alt="menu_icons"
+              />
             </div>
             <div class="dots_menu_icon">
               <div class="dots_wrapper">
                 <img
                   src="images/menu_close.svg"
                   class="right_close_img"
-                  alt=""
+                  alt="close_icon"
                 />
                 <img
                   src="images/dots_mobile_menu.svg"
                   class="dots_img"
-                  alt=""
+                  alt="dots_icon"
                 />
               </div>
               <div class="dots_yummy">YUMMY MENU</div>
@@ -65,7 +73,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <div class="yummy_wrapper">
       <div class="yummy_menu">
         <a href="">ALL</a>
@@ -78,7 +86,7 @@
         <a href="">DRINKS</a>
       </div>
     </div>
-    <section class="hero" onclick="hideNav()">
+    <div class="hero" onclick="hideNav()">
       <div class="wrapper">
         <div class="wrapper_wrapper">
           <div class="opening_hours_wrapper">
@@ -88,15 +96,21 @@
             <div class="social_media_links">
               <a href="http://www.facebook.com"
                 ><div class="facebook">
-                  <img src="images/facebook-logo.svg" alt="" /></div
+                  <img
+                    src="images/facebook-logo.svg"
+                    alt="facebook_logo"
+                  /></div
               ></a>
               <a href="http://www.twitter.com"
                 ><div class="twitter">
-                  <img src="images/twitter-logo.svg" alt="" /></div
+                  <img src="images/twitter-logo.svg" alt="twitter_logo" /></div
               ></a>
               <a href="http://www.instagram.com"
                 ><div class="instagram">
-                  <img src="images/instagram-logo.svg" alt="" /></div
+                  <img
+                    src="images/instagram-logo.svg"
+                    alt="instagram_logo"
+                  /></div
               ></a>
             </div>
           </div>
@@ -106,12 +120,12 @@
               <img
                 src="images/hero_second_header-bg-2.svg"
                 class="bg-2"
-                alt=""
+                alt="italien_pasta"
               />
               <img
                 src="images/hero_header-main-photo.jpg"
                 class="bg-1"
-                alt=""
+                alt="italien_pasta"
               />
             </div>
             <h1 class="tummy">TUMMY</h1>
@@ -121,14 +135,43 @@
               MAKE A RESERVATION : <span>+1 917-695-4445</span>
             </div>
             <div class="contact_links">
-              <a href="#"><div class="phone"></div></a>
-              <a href="#"><div class="email"></div></a>
-              <a href="#"><div class="location"></div></a>
+              <a href="#"
+                ><div class="phone">
+                  <img src="images/phone-white.svg" alt="phone_icon" /></div
+              ></a>
+              <a href="#"
+                ><div class="email">
+                  <img src="images/mail.svg" alt="email_icon" /></div
+              ></a>
+              <a href="#"
+                ><div class="location">
+                  <img src="images/location_pin.svg" alt="location_icon" /></div
+              ></a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="categories_links">
+      <div class="wrapper">
+        <div class="dots"></div>
+        <a href=""> <div>SOUPS</div> </a>
+        <div class="dots"></div>
+        <a href=""> <div>PIZZAS</div> </a>
+        <div class="dots"></div>
+        <a href=""> <div>PASTAS</div> </a>
+        <div class="dots"></div>
+        <a href=""> <div>SALADS</div> </a>
+        <div class="dots"></div>
+        <a href=""> <div>DESERT</div> </a>
+        <div class="dots"></div>
+        <a href="">
+          <div>DRINKS</div>
+        </a>
+        <div class="dots"></div>
+      </div>
+    </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>

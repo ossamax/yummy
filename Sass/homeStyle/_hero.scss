@@ -1,11 +1,6 @@
 .hero {
   padding: 5rem 0 0;
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.938),
-      rgba(0, 0, 0, 0.932)
-    ),
-    url("https://assets.website-files.com/5d5ffc98b6d68de20504403c/5d6b9bcc068031b0bd901c96_chalkboard-texture.jpg");
+  background-image: url("https://assets.website-files.com/5d5ffc98b6d68de20504403c/5d6b9bcc068031b0bd901c96_chalkboard-texture.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   @media screen and (min-width: 900px) {
@@ -15,8 +10,8 @@
     height: 100%;
     background-image: linear-gradient(
         180deg,
-        rgba(0, 0, 0, 0.22),
-        rgba(0, 0, 0, 0.22)
+        rgba(0, 0, 0, 0.103),
+        rgba(0, 0, 0, 0.096)
       ),
       url("../../images/hero.PNG");
     background-size: cover;
@@ -25,19 +20,21 @@
     width: 100%;
     .wrapper_wrapper {
       width: 95%;
+      height: 100%;
       margin: auto;
-      // padding: 3rem 0rem 2.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+      padding: 3rem 0rem 2.5rem;
+      @media screen and (min-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
       .opening_hours_wrapper {
         font-family: $blinker;
         @media screen and (min-width: 900px) {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          padding: 0 3rem;
+          padding: 0 2rem;
         }
         .hours {
           color: hsla(0, 0%, 96.9%, 0.5);
@@ -62,12 +59,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0 0.2rem;
+            margin: 0 0.3rem;
             &:hover {
               background-color: rgb(243, 189, 12);
             }
             img {
-              width: 45%;
+              width: 35%;
             }
           }
         }
@@ -76,18 +73,18 @@
         font-family: $teko;
         font-size: 3.8rem;
         color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         @media screen and (min-width: 900px) {
-          display: flex;
-          align-items: center;
-          font-size: 5.5rem;
+          flex-direction: row;
+          font-size: 4.5rem;
         }
         h1 {
           z-index: 2;
           font-weight: 700;
           position: relative;
-          @media screen and (min-width: 900px) {
-            position: initial;
-          }
         }
         .hero_img_wrapper {
           display: flex;
@@ -104,6 +101,9 @@
             box-shadow: 0px 2px 30px rgba(5, 5, 5, 0.466);
             animation: rotateZbg-1 20s ease infinite;
             transition: 3s ease-in-out;
+            @media screen and (min-width: 900px) {
+              width: 290px;
+            }
           }
           .bg-2 {
             width: 350px;
@@ -113,27 +113,67 @@
             transition: 3s ease-in-out;
             @media screen and (min-width: 900px) {
               animation: rotateZbg-2 20s ease infinite;
+              width: 400px;
             }
           }
         }
         .yummy {
           top: 4rem;
+          @media screen and (min-width: 900px) {
+            top: 0rem;
+            left: 1rem;
+          }
         }
         .tummy {
           color: $yellow;
           bottom: 3rem;
+          @media screen and (min-width: 900px) {
+            top: 0rem;
+            right: 1rem;
+          }
         }
       }
       .reservation {
         font-family: $blinker;
+        @media screen and (min-width: 900px) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 2rem;
+        }
         .reservation_phone {
           color: hsla(0, 0%, 96.9%, 0.5);
           text-align: center;
           letter-spacing: 4px;
           font-size: 0.65rem;
           font-weight: 600;
+          order: 2;
           span {
             color: $yellow;
+          }
+        }
+        .contact_links {
+          order: 1;
+          @media screen and (max-width: 900px) {
+            display: none;
+          }
+          display: flex;
+          div {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0.3rem;
+
+            &:hover {
+              background-color: rgb(243, 189, 12);
+            }
+            img {
+              width: 35%;
+            }
           }
         }
       }
