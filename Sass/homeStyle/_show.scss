@@ -1,0 +1,132 @@
+.show {
+  height: 100vh;
+  .wrapper {
+    width: 100%;
+    .show_plats {
+      @media screen and (min-width: 500px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media screen and (min-width: 990px) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .plats {
+        width: 100%;
+        height: 450px;
+        background-image: url("../../images/show_1_pizza-texture.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (min-width: 990px) {
+          height: 350px;
+        }
+
+        .img_wrapper {
+          width: 300px;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          @media screen and (min-width: 990px) {
+            width: 250px;
+          }
+          img {
+            width: 100%;
+            border-radius: 100%;
+          }
+        }
+        .facts_numbers {
+          position: absolute;
+          background-color: $yellow;
+          width: 180px;
+          height: 180px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          font-family: $blinker;
+          color: white;
+          box-shadow: 0 2px 20px rgba(66, 66, 66, 0.384);
+          @media screen and (min-width: 990px) {
+            width: 150px;
+            height: 150px;
+          }
+          .num {
+            font-weight: 800;
+            font-size: 2.5rem;
+          }
+          p {
+            font-weight: 600;
+          }
+        }
+      }
+      .deserts {
+        background-image: url("../../images/show_2_dessert-texture.jpg");
+      }
+      .salads {
+        background-image: url("../../images/show_3_salad-texture.jpg");
+      }
+      .pastas {
+        background-image: url("../../images/show_4_pasta-texture.jpg");
+      }
+    }
+    .show_inside_resto {
+      @media screen and (min-width: 500px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media screen and (min-width: 990px) {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .resto_images {
+        width: 100%;
+        height: 450px;
+        background-image: url("../../images/show_1_pizza-texture.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        @media screen and (min-width: 990px) {
+          height: 330px;
+        }
+        &:hover {
+          .overlay {
+            transform: scale(1);
+          }
+        }
+        .overlay {
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.459);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transform: scale(0);
+          transition: 0.3s ease-in-out;
+        }
+      }
+      .first {
+        background-image: url("../../images/resto_img_1_gallery-3.jpg");
+      }
+      .second {
+        background-image: url("../../images/resto_img_2_gallery-1.jpg");
+      }
+      .third {
+        background-image: url("../../images/resto_img_4_gallery-2.jpg");
+      }
+      .forth {
+        background-image: url("../../images/resto_img_4_gallery-4.jpg");
+      }
+    }
+  }
+}
