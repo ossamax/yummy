@@ -33,8 +33,10 @@
       padding: 1.5rem 0;
       text-align: center;
       border-top: 1px solid transparent;
+      transition: 0.1s ease-in-out;
       &:hover {
         border-color: $yellow;
+        color: white;
       }
     }
   }

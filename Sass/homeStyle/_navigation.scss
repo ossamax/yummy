@@ -91,7 +91,7 @@
         }
       }
       .main_nav_links.active {
-        top: 5.2rem;
+        top: 5rem;
         opacity: 1;
       }
       .main_nav_btns_wrapper {
@@ -208,8 +208,8 @@
   }
 }
 .yummy_wrapper.active {
-  top: 6.2rem;
+  top: 6rem;
   @media screen and (max-width: 980px) {
-    top: 5.2rem;
+    top: 5rem;
   }
 }

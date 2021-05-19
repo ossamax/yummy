@@ -36,6 +36,10 @@ li {
   outline: none;
 }
 
+input {
+  outline: none;
+}
+
 .navigation {
   background-color: #131313;
   position: fixed;
@@ -167,7 +171,7 @@ li {
 }
 
 .navigation .wrapper .main_nav .main_nav_links.active {
-  top: 5.2rem;
+  top: 5rem;
   opacity: 1;
 }
 
@@ -320,12 +324,12 @@ li {
 }
 
 .yummy_wrapper.active {
-  top: 6.2rem;
+  top: 6rem;
 }
 
 @media screen and (max-width: 980px) {
   .yummy_wrapper.active {
-    top: 5.2rem;
+    top: 5rem;
   }
 }
 
@@ -712,9 +716,350 @@ li {
   padding: 1.5rem 0;
   text-align: center;
   border-top: 1px solid transparent;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .categories_links .wrapper a:hover {
   border-color: #f2a60c;
+  color: white;
+}
+
+.about_us {
+  position: relative;
+}
+
+.about_us img {
+  width: 40%;
+  position: absolute;
+  z-index: -1;
+}
+
+@media screen and (min-width: 900px) {
+  .about_us img {
+    width: 25%;
+  }
+}
+
+.about_us .top-corner {
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.about_us .top-corner-red {
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.about_us .bottom-corner {
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.about_us .bottom-corner-red {
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.about_us .wrapper {
+  padding: 6rem 0;
+  position: relative;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+  .about_us .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.about_us .wrapper .form_wrapper {
+  background-color: #f2a60c;
+  padding: 1rem 2rem 2rem;
+  font-family: "Blinker", sans-serif;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-box-shadow: 0 2px 10px rgba(128, 128, 128, 0.295);
+          box-shadow: 0 2px 10px rgba(128, 128, 128, 0.295);
+}
+
+@media screen and (min-width: 900px) {
+  .about_us .wrapper .form_wrapper {
+    width: 53%;
+    margin: 1rem;
+  }
+}
+
+.about_us .wrapper .form_wrapper h3 {
+  margin: 2rem 0;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-family: "Blinker", sans-serif;
+}
+
+@media screen and (min-width: 900px) {
+  .about_us .wrapper .form_wrapper .about_form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (0.5fr)[5];
+        grid-template-rows: repeat(5, 0.5fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about_us .wrapper .form_wrapper .about_form .date {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about_us .wrapper .form_wrapper .about_form .time {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 2 / 2 / 3;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about_us .wrapper .form_wrapper .about_form .guest {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 3 / 2 / 4;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about_us .wrapper .form_wrapper .about_form .name {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 2 / 1 / 3 / 4;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about_us .wrapper .form_wrapper .about_form .email {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 3 / 1 / 4 / 4;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .about_us .wrapper .form_wrapper .about_form .phone {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 4 / 1 / 5 / 4;
+  }
+}
+
+.about_us .wrapper .form_wrapper .about_form input {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.about_us .wrapper .form_wrapper .about_form input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.699);
+}
+
+.about_us .wrapper .form_wrapper .about_form input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.699);
+}
+
+.about_us .wrapper .form_wrapper .about_form input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.699);
+}
+
+.about_us .wrapper .form_wrapper .about_form input::placeholder {
+  color: rgba(255, 255, 255, 0.699);
+}
+
+.about_us .wrapper .form_wrapper .about_form button {
+  width: 100%;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  background-color: #131313;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 900px) {
+  .about_us .wrapper .form_wrapper .about_form button {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 5 / 1 / 6 / 4;
+  }
+}
+
+.about_us .wrapper .about_us_content {
+  background-color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  -webkit-box-shadow: 0 2px 10px rgba(128, 128, 128, 0.295);
+          box-shadow: 0 2px 10px rgba(128, 128, 128, 0.295);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.5;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 900px) {
+  .about_us .wrapper .about_us_content {
+    width: 53%;
+    padding: 3rem 3rem;
+    margin: 0;
+    margin-left: 2rem;
+  }
+}
+
+.about_us .wrapper .about_us_content h1 {
+  font-family: "Teko", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.about_us .wrapper .about_us_content h1 span {
+  color: #f2a60c;
+}
+
+.about_us .wrapper .about_us_content .title_devider {
+  width: 100px;
+  height: 4px;
+  margin: 1rem auto;
+  background-color: #f2a60c;
+}
+
+.about_us .wrapper .about_us_content strong {
+  font-family: "Blinker", sans-serif;
+}
+
+.about_us .wrapper .about_us_content p {
+  margin: 2rem 0;
+  font-family: "Blinker", sans-serif;
+}
+
+.about_us .wrapper .about_us_content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.about_us .wrapper .about_us_content form .newsletter {
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  padding: 1rem 0 1rem 1rem;
+  background-color: rgba(150, 149, 149, 0.267);
+  position: relative;
+}
+
+.about_us .wrapper .about_us_content form input::-webkit-input-placeholder {
+  font-family: "Blinker", sans-serif;
+}
+
+.about_us .wrapper .about_us_content form input:-ms-input-placeholder {
+  font-family: "Blinker", sans-serif;
+}
+
+.about_us .wrapper .about_us_content form input::-ms-input-placeholder {
+  font-family: "Blinker", sans-serif;
+}
+
+.about_us .wrapper .about_us_content form input::placeholder {
+  font-family: "Blinker", sans-serif;
+}
+
+.about_us .wrapper .about_us_content form .sendIcon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #f2a60c;
+  background-image: url("../../images/about_us_send.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  cursor: pointer;
+  position: absolute;
+  right: 1.1rem;
+}
+
+@media screen and (min-width: 900px) {
+  .about_us .wrapper .about_us_content form .sendIcon {
+    right: 3rem;
+  }
+}
+
+.about_us .wrapper .about_us_content form .sendIcon:hover {
+  background-color: #f2bc0c;
 }
 /*# sourceMappingURL=home.css.map */
