@@ -53,3 +53,6 @@ function hideNav() {
   closeIconLeft.classList.remove("active");
   barsIcon.classList.remove("disactive");
 }
+
+
+

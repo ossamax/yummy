@@ -1,0 +1,80 @@
+.testemonials {
+  background-image: linear-gradient(
+      180deg,
+      hsla(0, 0%, 100%, 0.5),
+      hsla(0, 0%, 100%, 0.5)
+    ),
+    url("../../images/concrete_seamless.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 4rem 0;
+    column-gap: 15px;
+    row-gap: 15px;
+    @media screen and (min-width: 500px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (min-width: 900px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .testemonial {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      box-shadow: 0 5px 30px rgb(226, 226, 226);
+      padding: 2rem 0rem;
+      border-radius: 25px;
+      background-image: url("../../images/smile..svg");
+      background-repeat: no-repeat;
+      background-size: 70%;
+      background-position: center;
+      background-color: white;
+      position: relative;
+      margin-bottom: 3rem;
+      @media screen and (min-width: 500px) {
+        margin-bottom: 0;
+      }
+      @media screen and (min-width: 900px) {
+        padding: 4rem 0;
+      }
+      .quote {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        width: 60px;
+      }
+      .profil_img {
+        width: 100px;
+        border-radius: 100%;
+        box-shadow: 0 5px 10px rgb(182, 181, 181);
+      }
+      p {
+        font-family: $blinker;
+        padding: 1rem 2rem;
+        border-left: 3px solid $yellow;
+        border-right: 3px solid $yellow;
+        font-size: 1.1rem;
+        margin: 1rem 0;
+      }
+      .job {
+        font-family: $blinker;
+        color: $yellow;
+        font-weight: 600;
+      }
+      .name {
+        font-family: $teko;
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 1;
+        padding-top: 0.5rem;
+        span {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}

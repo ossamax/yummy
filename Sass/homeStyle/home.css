@@ -1112,6 +1112,7 @@ input {
 
 .show .wrapper .show_plats .plats .img_wrapper {
   width: 300px;
+  height: 300px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1123,18 +1124,19 @@ input {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  border-radius: 100%;
   overflow: hidden;
 }
 
 @media screen and (min-width: 990px) {
   .show .wrapper .show_plats .plats .img_wrapper {
     width: 250px;
+    height: 250px;
   }
 }
 
 .show .wrapper .show_plats .plats .img_wrapper img {
   width: 100%;
-  border-radius: 100%;
 }
 
 .show .wrapper .show_plats .plats .facts_numbers {
@@ -1528,5 +1530,318 @@ input {
 
 .house_dishes .wrapper .cta button:hover {
   background-color: #f2bc0c;
+}
+
+.partners .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding: 4rem 0;
+  gap: 15px;
+}
+
+@media screen and (min-width: 500px) {
+  .partners .wrapper {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .partners .wrapper {
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.partners .wrapper div {
+  padding: 1.5rem;
+  border: 1px solid #cacaca;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.partners .wrapper div:hover {
+  border-color: rgba(172, 172, 172, 0.555);
+  opacity: 0.8;
+}
+
+.partners .wrapper div img {
+  width: 90px;
+}
+
+.testemonials {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url("../../images/concrete_seamless.png");
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../images/concrete_seamless.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testemonials .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  padding: 4rem 0;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 15px;
+}
+
+@media screen and (min-width: 500px) {
+  .testemonials .wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .testemonials .wrapper {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.testemonials .wrapper .testemonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-shadow: 0 5px 30px #e2e2e2;
+          box-shadow: 0 5px 30px #e2e2e2;
+  padding: 2rem 0rem;
+  border-radius: 25px;
+  background-image: url("../../images/smile..svg");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  background-color: white;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 500px) {
+  .testemonials .wrapper .testemonial {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .testemonials .wrapper .testemonial {
+    padding: 4rem 0;
+  }
+}
+
+.testemonials .wrapper .testemonial .quote {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  width: 60px;
+}
+
+.testemonials .wrapper .testemonial .profil_img {
+  width: 100px;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 5px 10px #b6b5b5;
+          box-shadow: 0 5px 10px #b6b5b5;
+}
+
+.testemonials .wrapper .testemonial p {
+  font-family: "Blinker", sans-serif;
+  padding: 1rem 2rem;
+  border-left: 3px solid #f2a60c;
+  border-right: 3px solid #f2a60c;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+.testemonials .wrapper .testemonial .job {
+  font-family: "Blinker", sans-serif;
+  color: #f2a60c;
+  font-weight: 600;
+}
+
+.testemonials .wrapper .testemonial .name {
+  font-family: "Teko", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1;
+  padding-top: 0.5rem;
+}
+
+.testemonials .wrapper .testemonial .name span {
+  color: #f2a60c;
+}
+
+.events {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url("../../images/concrete_seamless.png");
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../images/concrete_seamless.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.events .wrapper {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (min-width: 500px) {
+  .events .wrapper {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .events .wrapper {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.events .wrapper .card_wrapper {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 900px) {
+  .events .wrapper .card_wrapper {
+    height: 300px;
+  }
+}
+
+.events .wrapper .card_wrapper:hover .front_face {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  z-index: 1;
+}
+
+.events .wrapper .card_wrapper:hover .card_details {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  z-index: 2;
+}
+
+.events .wrapper .card_wrapper .front_face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.events .wrapper .card_wrapper .front_face .event_name {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background-color: #f2a60c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Blinker", sans-serif;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-box-shadow: 2px 2px 20px #4b4b4b;
+          box-shadow: 2px 2px 20px #4b4b4b;
+}
+
+.events .wrapper .card_wrapper .card_details {
+  background-color: #131313;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  font-family: "Blinker", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.events .wrapper .card_wrapper .card_details h1 {
+  color: white;
+}
+
+.events .wrapper .card_wrapper .card_details h1 span {
+  color: #f2a60c;
+}
+
+.events .wrapper .card_wrapper .card_details .card_line {
+  width: 100px;
+  height: 2px;
+  background-color: #f2a60c;
+  margin: 2rem auto;
+}
+
+.events .wrapper .card_wrapper .card_details p {
+  color: gray;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 0 2rem;
 }
 /*# sourceMappingURL=home.css.map */

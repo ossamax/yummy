@@ -1,0 +1,31 @@
+.partners {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem 0;
+    gap: 15px;
+    @media screen and (min-width: 500px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (min-width: 900px) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    div {
+      padding: 1.5rem;
+      border: 1px solid rgb(202, 202, 202);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      cursor: pointer;
+      &:hover {
+        border-color: rgba(172, 172, 172, 0.555);
+        opacity: 0.8;
+      }
+      opacity: 0.5;
+      img {
+        width: 90px;
+      }
+    }
+  }
+}
