@@ -1,0 +1,182 @@
+.house_dishes {
+  .wrapper {
+    margin-bottom: 2rem;
+    .header {
+      font-family: $teko;
+      font-weight: 800;
+      text-align: center;
+      padding: 4rem 0 0.5rem;
+      h1 {
+        font-size: 3rem;
+      }
+      span {
+        color: $yellow;
+      }
+    }
+    .line {
+      width: 100px;
+      height: 3px;
+      margin: auto;
+      background-color: $yellow;
+      border-radius: 25px;
+    }
+    .menu_wrapper {
+      padding: 4rem 0 2rem;
+      @media screen and (min-width: 700px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media screen and (min-width: 990px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+      }
+      .menu {
+        width: 95%;
+        margin: auto;
+        height: 400px;
+        border-radius: 15px;
+        cursor: pointer;
+        box-shadow: 0 2px 20px rgba(128, 128, 128, 0.295);
+        font-family: $teko;
+        position: relative;
+        margin-bottom: 3rem;
+        overflow: hidden;
+        .overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: 15px;
+          background-color: #131313;
+          font-family: $blinker;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          padding: 0 2rem;
+          transform: scale(0);
+          transition: 0.5s ease-in-out;
+          h2 {
+            color: white;
+            font-weight: 800;
+            word-spacing: 3px;
+            font-size: 1.7rem;
+          }
+          .overlay_line {
+            width: 100px;
+            height: 2px;
+            background-color: $yellow;
+            margin: 1rem auto;
+          }
+          p {
+            color: gray;
+          }
+          .vegan,
+          .vegetarian,
+          .spicy {
+            color: white;
+            border-radius: 25px;
+            margin-top: 2rem;
+            transition: 0.1s ease-in-out;
+            padding: 0.5rem 1rem;
+            width: 30px;
+            height: 30px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            &:hover {
+              width: 85px;
+              P {
+                font-size: 1rem;
+              }
+            }
+            P {
+              font-size: 0;
+              font-weight: bold;
+              text-align: center;
+              color: white;
+              transition: 0.1s ease-in-out;
+            }
+          }
+          .vegan {
+            background-color: rgb(16, 216, 9);
+          }
+          .spicy {
+            background-color: rgb(216, 23, 9);
+          }
+          .vegetarian {
+            background-color: $yellow;
+            &:hover {
+              width: 120px;
+            }
+          }
+        }
+        &:hover {
+          .overlay {
+            transform: scale(1);
+          }
+          .menu_img {
+            height: 100%;
+            .price {
+              transform: scale(0);
+            }
+          }
+          .menu_name {
+            transform: scale(0);
+          }
+        }
+        .menu_img {
+          height: 80%;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+          border-radius: 15px;
+          box-shadow: 0 2px 10px rgba(128, 128, 128, 0.295);
+          transition: 0.3s ease-in-out;
+          .price {
+            font-weight: 800;
+            background-color: $yellow;
+            float: right;
+            padding: 0.5rem 1.5rem;
+            margin: 2rem;
+            font-size: 1.4rem;
+            color: white;
+            border-radius: 25px;
+            transition: 0.3s ease-in-out;
+          }
+        }
+        .menu_name {
+          height: 20%;
+          text-align: center;
+          font-size: 2rem;
+          font-weight: 800;
+          padding: 1.5rem 0;
+          text-transform: uppercase;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+    .cta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      button {
+        padding: 1rem 4rem;
+        background-color: $yellow;
+        color: white;
+        font-family: $blinker;
+        font-family: 800;
+        font-size: 1.2rem;
+        border-radius: 25px;
+        cursor: pointer;
+        &:hover {
+          background-color: #f2bc0c;
+        }
+      }
+    }
+  }
+}

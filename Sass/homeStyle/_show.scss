@@ -1,9 +1,8 @@
 .show {
-  height: 100vh;
   .wrapper {
     width: 100%;
     .show_plats {
-      @media screen and (min-width: 500px) {
+      @media screen and (min-width: 700px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
       }
@@ -32,6 +31,7 @@
           align-items: center;
           justify-content: center;
           position: relative;
+          overflow: hidden;
           @media screen and (min-width: 990px) {
             width: 250px;
           }
@@ -77,7 +77,7 @@
       }
     }
     .show_inside_resto {
-      @media screen and (min-width: 500px) {
+      @media screen and (min-width: 700px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
       }
