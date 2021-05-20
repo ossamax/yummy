@@ -1496,7 +1496,7 @@ input {
 .house_dishes .wrapper .menu_wrapper .menu .menu_name {
   height: 20%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 800;
   padding: 1.5rem 0;
   text-transform: uppercase;
@@ -1630,7 +1630,7 @@ input {
   text-align: center;
   -webkit-box-shadow: 0 5px 30px #e2e2e2;
           box-shadow: 0 5px 30px #e2e2e2;
-  padding: 2rem 0rem;
+  padding: 4rem 0rem;
   border-radius: 25px;
   background-image: url("../../images/smile..svg");
   background-repeat: no-repeat;
@@ -1672,7 +1672,7 @@ input {
   padding: 1rem 2rem;
   border-left: 3px solid #f2a60c;
   border-right: 3px solid #f2a60c;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 1rem 0;
 }
 
