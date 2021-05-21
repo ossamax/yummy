@@ -35,6 +35,10 @@
       background-color: white;
       position: relative;
       margin-bottom: 3rem;
+      &:hover {
+        box-shadow: none;
+        transform: translateY(-4px);
+      }
       @media screen and (min-width: 500px) {
         margin-bottom: 0;
       }

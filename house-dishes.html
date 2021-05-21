@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="Meet Yummy - The perfect website to get your newest restaurant, bar, cafe or coffee shop website up and running in no time."
+      name="description"
+    />
+    <meta
+      content="Meet Yummy - The perfect website to get your newest restaurant, bar, cafe or coffee shop website up and running in no time."
+      property="og:description"
+    />
+    <meta name="theme-color" content="#131313" />
+    <link
+      href="https://assets.website-files.com/5d5ffc98b6d68de20504403c/5d85238b6f40d8c432858560_favico.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <title>House Dishes</title>
+    <link rel="stylesheet" href="Sass/homeStyle/home.css" />
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="wrapper">
+        <div class="main_nav">
+          <a href="index.html">
+            <div class="nav_logo">
+              <div class="logo_img_wrapper">
+                <img src="images/logo_pizza.svg" alt="yummy_brand_logo" />
+              </div>
+              <div>YUMMY</div>
+            </div>
+          </a>
+
+          <div class="main_nav_links">
+            <a href="index.html">HOME</a>
+            <a href="index.html">BOOK A TABLE</a>
+            <a href="index.html">GALLERY</a>
+            <a href="index.html">HOUSE DISHES</a>
+            <a href="index.html">EVENTS</a>
+            <a href="index.html">CONTACT</a>
+          </div>
+
+          <div class="main_nav_btns_wrapper">
+            <div class="burger_menu_icon">
+              <img
+                src="images/menu_close.svg"
+                class="left_close_img"
+                alt="menu_icons"
+              />
+              <img
+                src="images/bars_mobile-menu.svg"
+                class="bars_img"
+                alt="menu_icons"
+              />
+            </div>
+            <div class="dots_menu_icon">
+              <div class="dots_wrapper">
+                <img
+                  src="images/menu_close.svg"
+                  class="right_close_img"
+                  alt="close_icon"
+                />
+                <img
+                  src="images/dots_mobile_menu.svg"
+                  class="dots_img"
+                  alt="dots_icon"
+                />
+              </div>
+              <div class="dots_yummy">YUMMY MENU</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="yummy_wrapper">
+      <div class="yummy_menu">
+        <a href="yummy-dishes.html">ALL</a>
+        <a href="house-dishes.html">HOUSE DISHES</a>
+        <a href="category/specials.html">SOUPS</a>
+        <a href="">PIZZAS</a>
+        <a href="">PASTAS</a>
+        <a href="">SALADS</a>
+        <a href="">DESERT</a>
+        <a href="">DRINKS</a>
+      </div>
+    </div>
+    <div class="hero" onclick="hideNav()">
+      <div class="wrapper">
+        <div class="wrapper_wrapper">
+          <div class="opening_hours_wrapper">
+            <div class="hours">
+              <span>OPENING HOURS:</span> MON-SUN, 8AM - 10PM
+            </div>
+            <div class="social_media_links">
+              <a href="http://www.facebook.com"
+                ><div class="facebook">
+                  <img
+                    src="images/facebook-logo.svg"
+                    alt="facebook_logo"
+                  /></div
+              ></a>
+              <a href="http://www.twitter.com"
+                ><div class="twitter">
+                  <img src="images/twitter-logo.svg" alt="twitter_logo" /></div
+              ></a>
+              <a href="http://www.instagram.com"
+                ><div class="instagram">
+                  <img
+                    src="images/instagram-logo.svg"
+                    alt="instagram_logo"
+                  /></div
+              ></a>
+            </div>
+          </div>
+          <div class="hero_main_images">
+            <h1 class="yummy">HOUSE</h1>
+            <div class="hero_img_wrapper">
+              <img
+                src="images/hero_second_header-bg-2.svg"
+                class="bg-2"
+                alt="italien_pasta"
+              />
+              <img
+                src="images/hero_header-main-photo.jpg"
+                class="bg-1"
+                alt="italien_pasta"
+              />
+            </div>
+            <h1 class="tummy">DISHES</h1>
+          </div>
+          <div class="reservation">
+            <div class="reservation_phone">
+              MAKE A RESERVATION : <span>+1 917-695-4445</span>
+            </div>
+            <div class="contact_links">
+              <a href="#"
+                ><div class="phone">
+                  <img src="images/phone-white.svg" alt="phone_icon" /></div
+              ></a>
+              <a href="#"
+                ><div class="email">
+                  <img src="images/mail.svg" alt="email_icon" /></div
+              ></a>
+              <a href="#"
+                ><div class="location">
+                  <img src="images/location_pin.svg" alt="location_icon" /></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="categories_links">
+      <div class="wrapper">
+        <div class="dots"></div>
+        <a href=""> <div>SOUPS</div> </a>
+        <div class="dots"></div>
+        <a href=""> <div>PIZZAS</div> </a>
+        <div class="dots"></div>
+        <a href=""> <div>PASTAS</div> </a>
+        <div class="dots"></div>
+        <a href=""> <div>SALADS</div> </a>
+        <div class="dots"></div>
+        <a href=""> <div>DESERT</div> </a>
+        <div class="dots"></div>
+        <a href="">
+          <div>DRINKS</div>
+        </a>
+        <div class="dots"></div>
+      </div>
+    </div>
+    <div class="house_dishes" onclick="hideNav()">
+      <div class="wrapper">
+        <div class="header">
+          <h1><span>HOUSE</span> DISHES</h1>
+        </div>
+        <div class="line"></div>
+
+        <div class="menu_wrapper">
+          <div class="menu">
+            <div class="overlay">
+              <h2>FRESH BROCCOLI SALAD</h2>
+              <div class="overlay_line"></div>
+              <p>
+                italian sausage, pesto, feta, cheese, bell pepper, tomatoes,
+                olives, salt
+              </p>
+            </div>
+            <div
+              class="menu_img"
+              style="background-image: url(images/menu_1_salad2.jpg)"
+            >
+              <div class="price">250 USD</div>
+            </div>
+            <div class="menu_name">FRESH BROCCOLI SALAD</div>
+          </div>
+          <div class="menu">
+            <div class="overlay">
+              <h2>CHOCOLATE ECLAIR DESSERT</h2>
+              <div class="overlay_line"></div>
+              <p>
+                italian sausage, pesto, feta, cheese, bell pepper, tomatoes,
+                olives, salt
+              </p>
+            </div>
+            <div
+              class="menu_img"
+              style="background-image: url(images/menu_2_dessert1.jpg)"
+            >
+              <div class="price">250 USD</div>
+            </div>
+            <div class="menu_name">Chocolate Eclair Dessert</div>
+          </div>
+          <div class="menu">
+            <div class="overlay">
+              <h2>CHICKEN TORTILLA SOUP</h2>
+              <div class="overlay_line"></div>
+              <p>
+                italian sausage, pesto, feta, cheese, bell pepper, tomatoes,
+                olives, salt
+              </p>
+              <div class="vegan"><p>vegan</p></div>
+            </div>
+            <div
+              class="menu_img"
+              style="background-image: url(images/menu_3_soup1.jpg)"
+            >
+              <div class="price">250 USD</div>
+            </div>
+            <div class="menu_name">Checken tortilla soup</div>
+          </div>
+          <div class="menu">
+            <div class="overlay">
+              <h2>ZESTY QUINOA SALAD</h2>
+              <div class="overlay_line"></div>
+              <p>
+                italian sausage, pesto, feta, cheese, bell pepper, tomatoes,
+                olives, salt
+              </p>
+              <div class="spicy"><p>spicy</p></div>
+            </div>
+            <div
+              class="menu_img"
+              style="background-image: url(images/menu_4_salad3.jpg)"
+            >
+              <div class="price">250 USD</div>
+            </div>
+            <div class="menu_name">Zesty Quinoa Salad</div>
+          </div>
+          <div class="menu">
+            <div class="overlay">
+              <h2>RIGATONI ALLA GENOVESE</h2>
+              <div class="overlay_line"></div>
+              <p>
+                italian sausage, pesto, feta, cheese, bell pepper, tomatoes,
+                olives, salt
+              </p>
+              <div class="vegan"><p>vegan</p></div>
+            </div>
+            <div
+              class="menu_img"
+              style="background-image: url(images/menu_5_pasta1.jpg)"
+            >
+              <div class="price">250 USD</div>
+            </div>
+            <div class="menu_name">Rigatoni alla Genovese</div>
+          </div>
+          <div class="menu">
+            <div class="overlay">
+              <h2>PESTO CHICKEN FLORENTINE</h2>
+              <div class="overlay_line"></div>
+              <p>
+                italian sausage, pesto, feta, cheese, bell pepper, tomatoes,
+                olives, salt VEGETARIAN
+              </p>
+              <div class="vegetarian"><p>vegetarian</p></div>
+            </div>
+            <div
+              class="menu_img"
+              style="background-image: url(images/menu_6_pasta2.jpg)"
+            >
+              <div class="price">250 USD</div>
+            </div>
+            <div class="menu_name">Pesto Chicken Florentine</div>
+          </div>
+          <div class="menu">
+            <div class="overlay">
+              <h2>PINEAPPLE PIZZA</h2>
+              <div class="overlay_line"></div>
+              <p>
+                italian sausage, pesto, feta, cheese, bell pepper, tomatoes,
+                olives, salt
+              </p>
+              <div class="type">
+                <div class="vegan"><p>vegan</p></div>
+                <div class="spicy"><p>spicy</p></div>
+                <div class="vegetarian"><p>vegetarian</p></div>
+              </div>
+            </div>
+            <div
+              class="menu_img"
+              style="background-image: url(images/yumy_dishes_pizza3.jpg)"
+            >
+              <div class="price">250 USD</div>
+            </div>
+            <div class="menu_name">PINEAPPLE PIZZA</div>
+          </div>
+          <div class="menu">
+            <div class="overlay">
+              <h2>JIMMY'S MEXICAN PIZZA</h2>
+              <div class="overlay_line"></div>
+              <p>
+                italian sausage, pesto, feta, cheese, bell pepper, tomatoes,
+                olives, salt
+              </p>
+            </div>
+            <div
+              class="menu_img"
+              style="background-image: url(images/mexican_pizza1.jpg)"
+            >
+              <div class="price">250 USD</div>
+            </div>
+            <div class="menu_name">JIMMY'S MEXICAN PIZZA</div>
+          </div>
+          <div class="menu">
+            <div class="overlay">
+              <h2>GORGONZOLA PIZZA</h2>
+              <div class="overlay_line"></div>
+              <p>
+                italian sausage, pesto, feta, cheese, bell pepper, tomatoes,
+                olives, salt
+              </p>
+              <div class="type">
+                <div class="vegan"><p>vegan</p></div>
+                <div class="spicy"><p>spicy</p></div>
+              </div>
+            </div>
+            <div
+              class="menu_img"
+              style="background-image: url(images/gonzola_pizza2.jpg)"
+            >
+              <div class="price">250 USD</div>
+            </div>
+            <div class="menu_name">GORGONZOLA PIZZA</div>
+          </div>
+        </div>
+        <div class="cta"><button>Book a Table</button></div>
+      </div>
+    </div>
+    <footer onclick="hideNav()">
+      <div class="wrapper">
+        <div class="wrp">
+          <a href="#" class="footer_icon">
+            <img
+              src="https://assets.website-files.com/5d5ffc98b6d68de20504403c/5d7b89b21e2e7d3e86466935_phone-color.svg"
+              alt="phone_icon"
+          /></a>
+          <div class="info">+1 917-872-9448</div>
+        </div>
+        <div class="wrp">
+          <a href="#" class="footer_icon">
+            <img
+              src="https://assets.website-files.com/5d5ffc98b6d68de20504403c/5d7b72eaf83da7356a30b668_mail-color.svg"
+              alt="email_icon"
+          /></a>
+          <div class="info">YUMMY@TUMMY.COM</div>
+        </div>
+        <div class="wrp">
+          <a href="#" class="footer_icon">
+            <img
+              src="https://assets.website-files.com/5d5ffc98b6d68de20504403c/5d7b6a133a8c2564e64dd829_pin-color.svg"
+              alt="location_icon"
+            />
+          </a>
+          <div class="info">23 YUMMY BLVD, NEW YORK, USA</div>
+        </div>
+      </div>
+      <div class="rights">© All rights are reserved</div>
+    </footer>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

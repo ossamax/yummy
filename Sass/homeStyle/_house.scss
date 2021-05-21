@@ -72,12 +72,17 @@
           p {
             color: gray;
           }
+          .type {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
           .vegan,
           .vegetarian,
           .spicy {
             color: white;
             border-radius: 25px;
-            margin-top: 2rem;
+            margin: 2rem 0.5rem 0;
             transition: 0.1s ease-in-out;
             padding: 0.5rem 1rem;
             width: 30px;
@@ -87,6 +92,7 @@
             justify-content: center;
             align-items: center;
             text-transform: uppercase;
+
             &:hover {
               width: 85px;
               P {
