@@ -36,7 +36,7 @@
         }
       }
     }
-    form {
+    .contact_form {
       width: 100%;
       background-color: #030303de;
       font-family: $blinker;
@@ -56,7 +56,7 @@
       }
       input,
       textarea {
-        padding: 1.2rem;
+        padding: 1rem;
         background-color: hsla(0, 0%, 100%, 0.1);
         border: none;
         margin: 0.3rem 0;
@@ -76,7 +76,7 @@
       }
       button {
         width: 100%;
-        padding: 1.2rem 0;
+        padding: 1rem 0;
         cursor: pointer;
         background-color: $yellow;
         color: white;
@@ -99,7 +99,7 @@ footer {
     flex-direction: column;
     @media screen and (min-width: 994px) {
       align-items: center;
-      justify-content: center;
+      justify-content: space-around;
       flex-direction: row;
       padding: 0rem;
     }

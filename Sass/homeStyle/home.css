@@ -525,7 +525,7 @@ input {
   .hero .wrapper .wrapper_wrapper .hero_main_images .hero_img_wrapper .bg-2 {
     -webkit-animation: rotateZbg-2 20s ease infinite;
             animation: rotateZbg-2 20s ease infinite;
-    width: 400px;
+    width: 430px;
   }
 }
 
@@ -968,7 +968,7 @@ input {
 @media screen and (min-width: 900px) {
   .about_us .wrapper .about_us_content {
     width: 53%;
-    padding: 3rem 3rem;
+    padding: 1.5rem 3rem;
     margin: 0;
     margin-left: 2rem;
   }
@@ -1929,7 +1929,7 @@ input {
   width: 35%;
 }
 
-.contact .wrapper form {
+.contact .wrapper .contact_form {
   width: 100%;
   background-color: #030303de;
   font-family: "Blinker", sans-serif;
@@ -1938,13 +1938,13 @@ input {
 }
 
 @media screen and (min-width: 994px) {
-  .contact .wrapper form {
+  .contact .wrapper .contact_form {
     width: 50%;
     padding: 2rem 4rem;
   }
 }
 
-.contact .wrapper form h1 {
+.contact .wrapper .contact_form h1 {
   color: white;
   padding: 1rem 0;
   font-weight: 600;
@@ -1952,9 +1952,9 @@ input {
   letter-spacing: 2px;
 }
 
-.contact .wrapper form input,
-.contact .wrapper form textarea {
-  padding: 1.2rem;
+.contact .wrapper .contact_form input,
+.contact .wrapper .contact_form textarea {
+  padding: 1rem;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
   margin: 0.3rem 0;
@@ -1964,41 +1964,41 @@ input {
   color: white;
 }
 
-.contact .wrapper form input::-webkit-input-placeholder,
-.contact .wrapper form textarea::-webkit-input-placeholder {
+.contact .wrapper .contact_form input::-webkit-input-placeholder,
+.contact .wrapper .contact_form textarea::-webkit-input-placeholder {
   color: #acacac;
   font-family: "Blinker", sans-serif;
   font-size: 0.95 rem;
 }
 
-.contact .wrapper form input:-ms-input-placeholder,
-.contact .wrapper form textarea:-ms-input-placeholder {
+.contact .wrapper .contact_form input:-ms-input-placeholder,
+.contact .wrapper .contact_form textarea:-ms-input-placeholder {
   color: #acacac;
   font-family: "Blinker", sans-serif;
   font-size: 0.95 rem;
 }
 
-.contact .wrapper form input::-ms-input-placeholder,
-.contact .wrapper form textarea::-ms-input-placeholder {
+.contact .wrapper .contact_form input::-ms-input-placeholder,
+.contact .wrapper .contact_form textarea::-ms-input-placeholder {
   color: #acacac;
   font-family: "Blinker", sans-serif;
   font-size: 0.95 rem;
 }
 
-.contact .wrapper form input::placeholder,
-.contact .wrapper form textarea::placeholder {
+.contact .wrapper .contact_form input::placeholder,
+.contact .wrapper .contact_form textarea::placeholder {
   color: #acacac;
   font-family: "Blinker", sans-serif;
   font-size: 0.95 rem;
 }
 
-.contact .wrapper form textarea {
+.contact .wrapper .contact_form textarea {
   resize: none;
 }
 
-.contact .wrapper form button {
+.contact .wrapper .contact_form button {
   width: 100%;
-  padding: 1.2rem 0;
+  padding: 1rem 0;
   cursor: pointer;
   background-color: #f2a60c;
   color: white;
@@ -2034,9 +2034,8 @@ footer .wrapper {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
