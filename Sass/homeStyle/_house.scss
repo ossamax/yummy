@@ -34,7 +34,7 @@
       .menu {
         width: 95%;
         margin: auto;
-        height: 400px;
+        height: 350px;
         border-radius: 15px;
         cursor: pointer;
         box-shadow: 0 2px 20px rgba(128, 128, 128, 0.295);
@@ -146,9 +146,9 @@
             font-weight: 800;
             background-color: $yellow;
             float: right;
-            padding: 0.5rem 1.5rem;
+            padding: .4rem 1.2rem .3rem;
             margin: 2rem;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             color: white;
             border-radius: 25px;
             transition: 0.3s ease-in-out;
