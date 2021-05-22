@@ -1,6 +1,6 @@
 .house_dishes {
   .wrapper {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     .header {
       font-family: $teko;
       font-weight: 800;
@@ -94,9 +94,9 @@
             text-transform: uppercase;
 
             &:hover {
-              width: 85px;
+              width: 80px;
               P {
-                font-size: 1rem;
+                font-size: .8rem;
               }
             }
             P {

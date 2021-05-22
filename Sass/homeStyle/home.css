@@ -62,7 +62,7 @@ input {
 
 @media screen and (min-width: 980px) {
   .navigation .wrapper {
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
   }
 }
 
@@ -134,7 +134,7 @@ input {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   font-weight: 550;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 @media screen and (max-width: 980px) {
@@ -207,6 +207,13 @@ input {
   transition: 0.3s ease-in-out;
 }
 
+@media screen and (min-width: 980px) {
+  .navigation .wrapper .main_nav .main_nav_btns_wrapper .burger_menu_icon,
+  .navigation .wrapper .main_nav .main_nav_btns_wrapper .dots_menu_icon {
+    height: 45px;
+  }
+}
+
 .navigation .wrapper .main_nav .main_nav_btns_wrapper .burger_menu_icon:hover,
 .navigation .wrapper .main_nav .main_nav_btns_wrapper .dots_menu_icon:hover {
   background-color: #edb408;
@@ -233,7 +240,7 @@ input {
 
 @media screen and (min-width: 980px) {
   .navigation .wrapper .main_nav .main_nav_btns_wrapper .dots_menu_icon {
-    width: 170px;
+    width: 160px;
     border-radius: 30px;
   }
 }
@@ -262,10 +269,11 @@ input {
 
 .navigation .wrapper .main_nav .main_nav_btns_wrapper .dots_menu_icon .dots_yummy {
   color: white;
-  font-family: "Teko", sans-serif;
+  font-family: "Blinker", sans-serif;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.7rem;
   margin-left: 0.5rem;
+  letter-spacing: 2px;
 }
 
 @media screen and (max-width: 980px) {
@@ -306,9 +314,9 @@ input {
   margin: 0 1.6rem;
   font-family: "Blinker", sans-serif;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 @media screen and (max-width: 980px) {
@@ -324,7 +332,7 @@ input {
 }
 
 .yummy_wrapper.active {
-  top: 6rem;
+  top: 5rem;
 }
 
 @media screen and (max-width: 980px) {
@@ -342,7 +350,7 @@ input {
 
 @media screen and (min-width: 900px) {
   .hero {
-    height: 650px;
+    height: 570px;
   }
 }
 
@@ -360,7 +368,7 @@ input {
   width: 95%;
   height: 100%;
   margin: auto;
-  padding: 3rem 0rem 2.5rem;
+  padding: 2rem 0rem 2rem;
 }
 
 @media screen and (min-width: 900px) {
@@ -422,8 +430,8 @@ input {
 }
 
 .hero .wrapper .wrapper_wrapper .opening_hours_wrapper .social_media_links div {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: #f2a60c;
   display: -webkit-box;
@@ -477,8 +485,15 @@ input {
 
 .hero .wrapper .wrapper_wrapper .hero_main_images h1 {
   z-index: 2;
+  font-size: 7rem;
   font-weight: 700;
   position: relative;
+}
+
+@media screen and (min-width: 900px) {
+  .hero .wrapper .wrapper_wrapper .hero_main_images h1 {
+    font-size: 8rem;
+  }
 }
 
 .hero .wrapper .wrapper_wrapper .hero_main_images .hero_img_wrapper {
@@ -499,17 +514,17 @@ input {
   margin: auto;
   position: relative;
   z-index: 3;
-  -webkit-box-shadow: 0px 2px 30px rgba(5, 5, 5, 0.466);
-          box-shadow: 0px 2px 30px rgba(5, 5, 5, 0.466);
-  -webkit-animation: rotateZbg-1 20s ease infinite;
-          animation: rotateZbg-1 20s ease infinite;
+  -webkit-box-shadow: 10px 10px 50px rgba(5, 5, 5, 0.61);
+          box-shadow: 10px 10px 50px rgba(5, 5, 5, 0.61);
+  -webkit-animation: rotateZbg-1 50s ease infinite;
+          animation: rotateZbg-1 50s ease infinite;
   -webkit-transition: 3s ease-in-out;
   transition: 3s ease-in-out;
 }
 
 @media screen and (min-width: 900px) {
   .hero .wrapper .wrapper_wrapper .hero_main_images .hero_img_wrapper .bg-1 {
-    width: 290px;
+    width: 220px;
   }
 }
 
@@ -519,13 +534,21 @@ input {
   z-index: 1;
   -webkit-transition: 3s ease-in-out;
   transition: 3s ease-in-out;
+  -webkit-box-shadow: 10px 10px 50px rgba(5, 5, 5, 0.842);
+          box-shadow: 10px 10px 50px rgba(5, 5, 5, 0.842);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url("https://assets.website-files.com/5d5ffc98b6d68de20504403c/5d80c9f02580d2ff0b07a83b_servint-tray.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("https://assets.website-files.com/5d5ffc98b6d68de20504403c/5d80c9f02580d2ff0b07a83b_servint-tray.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
 }
 
 @media screen and (min-width: 900px) {
   .hero .wrapper .wrapper_wrapper .hero_main_images .hero_img_wrapper .bg-2 {
-    -webkit-animation: rotateZbg-2 20s ease infinite;
-            animation: rotateZbg-2 20s ease infinite;
-    width: 430px;
+    -webkit-animation: rotateZbg-2 50s ease infinite;
+            animation: rotateZbg-2 50s ease infinite;
+    width: 340px;
   }
 }
 
@@ -602,8 +625,8 @@ input {
 }
 
 .hero .wrapper .wrapper_wrapper .reservation .contact_links div {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: #f2a60c;
   display: -webkit-box;
@@ -711,7 +734,7 @@ input {
   color: gray;
   font-family: "Blinker", sans-serif;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: .85rem;
   letter-spacing: 2px;
   padding: 1.5rem 0;
   text-align: center;
@@ -1276,7 +1299,7 @@ input {
 }
 
 .house_dishes .wrapper {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .house_dishes .wrapper .header {
@@ -1425,13 +1448,13 @@ input {
 .house_dishes .wrapper .menu_wrapper .menu .overlay .vegan:hover,
 .house_dishes .wrapper .menu_wrapper .menu .overlay .vegetarian:hover,
 .house_dishes .wrapper .menu_wrapper .menu .overlay .spicy:hover {
-  width: 85px;
+  width: 80px;
 }
 
 .house_dishes .wrapper .menu_wrapper .menu .overlay .vegan:hover P,
 .house_dishes .wrapper .menu_wrapper .menu .overlay .vegetarian:hover P,
 .house_dishes .wrapper .menu_wrapper .menu .overlay .spicy:hover P {
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .house_dishes .wrapper .menu_wrapper .menu .overlay .vegan P,

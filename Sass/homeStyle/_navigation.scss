@@ -18,7 +18,7 @@
   .wrapper {
     padding: 1rem 0rem;
     @media screen and (min-width: 980px) {
-      padding: 1.5rem 1rem;
+      padding: 1rem 1rem;
     }
     .main_nav {
       display: flex;
@@ -59,7 +59,7 @@
           margin: 0 1.2rem;
           transition: 0.3s ease-in-out;
           font-weight: 550;
-          letter-spacing: 2px;
+          letter-spacing: 1px;
           @media screen and (max-width: 980px) {
             display: inline-block;
             margin: 0.7rem 0;
@@ -112,6 +112,9 @@
           cursor: pointer;
           margin: 0 0.3rem;
           transition: 0.3s ease-in-out;
+          @media screen and (min-width: 980px) {
+            height: 45px;
+          }
           &:hover {
             background-color: #edb408;
           }
@@ -133,7 +136,7 @@
         }
         .dots_menu_icon {
           @media screen and (min-width: 980px) {
-            width: 170px;
+            width: 160px;
             border-radius: 30px;
           }
           .dots_wrapper {
@@ -152,10 +155,11 @@
           }
           .dots_yummy {
             color: white;
-            font-family: $teko;
+            font-family: $blinker;
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 0.7rem;
             margin-left: 0.5rem;
+            letter-spacing: 2px;
             @media screen and (max-width: 980px) {
               display: none;
             }
@@ -193,9 +197,9 @@
       margin: 0 1.6rem;
       font-family: $blinker;
       font-weight: 600;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       color: white;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       @media screen and (max-width: 980px) {
         margin: 0 0.5rem;
         padding: 0.5rem 0;
@@ -208,7 +212,7 @@
   }
 }
 .yummy_wrapper.active {
-  top: 6rem;
+  top: 5rem;
   @media screen and (max-width: 980px) {
     top: 5rem;
   }
