@@ -6,7 +6,7 @@ gsap.to(".form_wrapper", {
   x: 0,
   duration: 1,
   scrollTrigger: {
-    trigger: ".about_us",
+    trigger: ".about_form",
   },
 });
 gsap.to(".about_us_content", {
@@ -14,7 +14,7 @@ gsap.to(".about_us_content", {
   x: 0,
   duration: 1,
   scrollTrigger: {
-    trigger: ".about_us",
+    trigger: ".about_us_content",
   },
 });
 //show
