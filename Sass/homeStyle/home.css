@@ -902,6 +902,7 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 900px) {
@@ -915,7 +916,7 @@ input {
 
 .about_us .wrapper .form_wrapper {
   background-color: #f2a60c;
-  padding: 1rem 2rem 2rem;
+  padding: 1rem 1rem 2rem;
   font-family: "Blinker", sans-serif;
   color: white;
   border-radius: 10px;

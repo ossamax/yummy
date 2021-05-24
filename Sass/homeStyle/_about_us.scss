@@ -38,12 +38,13 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
     @media screen and (min-width: 900px) {
       flex-direction: row;
     }
     .form_wrapper {
       background-color: $yellow;
-      padding: 1rem 2rem 2rem;
+      padding: 1rem 1rem 2rem;
       font-family: $blinker;
       color: white;
       border-radius: 10px;
