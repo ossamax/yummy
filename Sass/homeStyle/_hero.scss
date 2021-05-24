@@ -23,6 +23,7 @@
       height: 100%;
       margin: auto;
       padding: 2rem 0rem 2rem;
+      overflow: hidden;
       @media screen and (min-width: 900px) {
         display: flex;
         flex-direction: column;
@@ -132,17 +133,21 @@
         }
         .yummy {
           top: 4rem;
+          animation: yummyMobile 1s ease-in forwards;
           @media screen and (min-width: 900px) {
             top: 0rem;
             left: 1rem;
+            animation: yummy 1s ease-in forwards;
           }
         }
         .tummy {
           color: $yellow;
           bottom: 3rem;
+           animation: tummyMobile 1s ease-in forwards;
           @media screen and (min-width: 900px) {
             top: 0rem;
             right: 1rem;
+            animation: tummy 1s ease-in forwards;
           }
         }
       }
@@ -207,5 +212,49 @@
   }
   100% {
     transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes yummyMobile {
+  0% {
+    top: 0rem;
+    opacity: 0;
+  }
+  100% {
+    top: 4rem;
+    opacity: 1;
+  }
+}
+
+@keyframes yummy {
+  0% {
+    left: -10rem;
+    opacity: 0;
+  }
+  100% {
+    left: 1rem;
+    opacity: 1;
+  }
+}
+@keyframes tummyMobile {
+  0% {
+    bottom: 0rem;
+    opacity: 0;
+  }
+  100% {
+    bottom: 3rem;
+    opacity: 1;
+  }
+}
+
+
+@keyframes tummy {
+  0% {
+    right: -10rem;
+    opacity: 0;
+  }
+  100% {
+    right: 1rem;
+    opacity: 1;
   }
 }

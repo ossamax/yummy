@@ -1,4 +1,7 @@
 .house_dishes {
+  transform: translateY(10rem);
+  opacity: 0;
+  transition: 1s ease-in-out;
   .wrapper {
     margin-bottom: 4rem;
     .header {
@@ -96,7 +99,7 @@
             &:hover {
               width: 80px;
               P {
-                font-size: .8rem;
+                font-size: 0.8rem;
               }
             }
             P {
@@ -146,7 +149,7 @@
             font-weight: 800;
             background-color: $yellow;
             float: right;
-            padding: .4rem 1.2rem .3rem;
+            padding: 0.4rem 1.2rem 0.3rem;
             margin: 2rem;
             font-size: 1.3rem;
             color: white;

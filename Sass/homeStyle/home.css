@@ -369,6 +369,7 @@ input {
   height: 100%;
   margin: auto;
   padding: 2rem 0rem 2rem;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 900px) {
@@ -554,24 +555,32 @@ input {
 
 .hero .wrapper .wrapper_wrapper .hero_main_images .yummy {
   top: 4rem;
+  -webkit-animation: yummyMobile 1s ease-in forwards;
+          animation: yummyMobile 1s ease-in forwards;
 }
 
 @media screen and (min-width: 900px) {
   .hero .wrapper .wrapper_wrapper .hero_main_images .yummy {
     top: 0rem;
     left: 1rem;
+    -webkit-animation: yummy 1s ease-in forwards;
+            animation: yummy 1s ease-in forwards;
   }
 }
 
 .hero .wrapper .wrapper_wrapper .hero_main_images .tummy {
   color: #f2a60c;
   bottom: 3rem;
+  -webkit-animation: tummyMobile 1s ease-in forwards;
+          animation: tummyMobile 1s ease-in forwards;
 }
 
 @media screen and (min-width: 900px) {
   .hero .wrapper .wrapper_wrapper .hero_main_images .tummy {
     top: 0rem;
     right: 1rem;
+    -webkit-animation: tummy 1s ease-in forwards;
+            animation: tummy 1s ease-in forwards;
   }
 }
 
@@ -690,6 +699,94 @@ input {
   100% {
     -webkit-transform: rotateZ(-360deg);
             transform: rotateZ(-360deg);
+  }
+}
+
+@-webkit-keyframes yummyMobile {
+  0% {
+    top: 0rem;
+    opacity: 0;
+  }
+  100% {
+    top: 4rem;
+    opacity: 1;
+  }
+}
+
+@keyframes yummyMobile {
+  0% {
+    top: 0rem;
+    opacity: 0;
+  }
+  100% {
+    top: 4rem;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes yummy {
+  0% {
+    left: -10rem;
+    opacity: 0;
+  }
+  100% {
+    left: 1rem;
+    opacity: 1;
+  }
+}
+
+@keyframes yummy {
+  0% {
+    left: -10rem;
+    opacity: 0;
+  }
+  100% {
+    left: 1rem;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes tummyMobile {
+  0% {
+    bottom: 0rem;
+    opacity: 0;
+  }
+  100% {
+    bottom: 3rem;
+    opacity: 1;
+  }
+}
+
+@keyframes tummyMobile {
+  0% {
+    bottom: 0rem;
+    opacity: 0;
+  }
+  100% {
+    bottom: 3rem;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes tummy {
+  0% {
+    right: -10rem;
+    opacity: 0;
+  }
+  100% {
+    right: 1rem;
+    opacity: 1;
+  }
+}
+
+@keyframes tummy {
+  0% {
+    right: -10rem;
+    opacity: 0;
+  }
+  100% {
+    right: 1rem;
+    opacity: 1;
   }
 }
 
@@ -825,6 +922,11 @@ input {
   text-align: center;
   -webkit-box-shadow: 0 2px 10px rgba(128, 128, 128, 0.295);
           box-shadow: 0 2px 10px rgba(128, 128, 128, 0.295);
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  -webkit-transform: translateX(-5rem);
+          transform: translateX(-5rem);
+  opacity: 0;
 }
 
 @media screen and (min-width: 900px) {
@@ -835,8 +937,8 @@ input {
 }
 
 .about_us .wrapper .form_wrapper h3 {
-  margin: 2rem 0;
-  font-size: 0.9rem;
+  margin: 1rem 0;
+  font-size: 0.8rem;
   letter-spacing: 2px;
   font-weight: 600;
   font-family: "Blinker", sans-serif;
@@ -918,7 +1020,7 @@ input {
 .about_us .wrapper .form_wrapper .about_form input {
   width: 100%;
   margin: 0.5rem 0;
-  padding: 1rem 1.5rem;
+  padding: 0.9rem 1.5rem;
   border: none;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -943,14 +1045,14 @@ input {
 
 .about_us .wrapper .form_wrapper .about_form button {
   width: 100%;
-  padding: 1.2rem 0;
+  padding: 1rem 0;
   margin: 1rem 0;
   background-color: #131313;
   color: white;
   font-weight: 600;
   cursor: pointer;
   border-radius: 25px;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   letter-spacing: 1px;
 }
 
@@ -986,12 +1088,17 @@ input {
           flex-direction: column;
   line-height: 1.5;
   border-radius: 10px;
+  -webkit-transition: 0.8s ease-in-out;
+  transition: 0.8s ease-in-out;
+  -webkit-transform: translateX(5rem);
+          transform: translateX(5rem);
+  opacity: 0;
 }
 
 @media screen and (min-width: 900px) {
   .about_us .wrapper .about_us_content {
     width: 53%;
-    padding: 1.5rem 3rem;
+    padding: 2.7rem 3rem;
     margin: 0;
     margin-left: 2rem;
   }
@@ -1000,7 +1107,7 @@ input {
 .about_us .wrapper .about_us_content h1 {
   font-family: "Teko", sans-serif;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -1018,11 +1125,13 @@ input {
 
 .about_us .wrapper .about_us_content strong {
   font-family: "Blinker", sans-serif;
+  font-size: 0.9rem;
 }
 
 .about_us .wrapper .about_us_content p {
   margin: 2rem 0;
   font-family: "Blinker", sans-serif;
+  font-size: 0.9rem;
 }
 
 .about_us .wrapper .about_us_content form {
@@ -1042,7 +1151,7 @@ input {
   width: 100%;
   border: none;
   border-radius: 25px;
-  padding: 1.2rem 0 1.2rem 1.2rem;
+  padding: 1rem 0 1rem 1rem;
   background-color: rgba(150, 149, 149, 0.267);
   position: relative;
 }
@@ -1064,8 +1173,8 @@ input {
 }
 
 .about_us .wrapper .about_us_content form .sendIcon {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: #f2a60c;
   background-image: url("../../images/about_us_send.svg");
@@ -1079,7 +1188,7 @@ input {
 
 @media screen and (min-width: 900px) {
   .about_us .wrapper .about_us_content form .sendIcon {
-    right: 3rem;
+    right: 3.1rem;
   }
 }
 
@@ -1185,6 +1294,8 @@ input {
   color: white;
   -webkit-box-shadow: 0 2px 20px rgba(66, 66, 66, 0.384);
           box-shadow: 0 2px 20px rgba(66, 66, 66, 0.384);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 @media screen and (min-width: 990px) {
@@ -1296,6 +1407,14 @@ input {
 
 .show .wrapper .show_inside_resto .forth {
   background-image: url("../../images/resto_img_4_gallery-4.jpg");
+}
+
+.house_dishes {
+  -webkit-transform: translateY(10rem);
+          transform: translateY(10rem);
+  opacity: 0;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .house_dishes .wrapper {
@@ -1454,7 +1573,7 @@ input {
 .house_dishes .wrapper .menu_wrapper .menu .overlay .vegan:hover P,
 .house_dishes .wrapper .menu_wrapper .menu .overlay .vegetarian:hover P,
 .house_dishes .wrapper .menu_wrapper .menu .overlay .spicy:hover P {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .house_dishes .wrapper .menu_wrapper .menu .overlay .vegan P,
@@ -1519,7 +1638,7 @@ input {
   font-weight: 800;
   background-color: #f2a60c;
   float: right;
-  padding: .4rem 1.2rem .3rem;
+  padding: 0.4rem 1.2rem 0.3rem;
   margin: 2rem;
   font-size: 1.3rem;
   color: white;
