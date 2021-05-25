@@ -55,8 +55,9 @@
           div {
             width: 45px;
             height: 45px;
-            border-radius: 50%;
-            background-color: $yellow;
+            border-radius: 100%;
+
+            background-color: rgb(78, 78, 78);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -143,7 +144,7 @@
         .tummy {
           color: $yellow;
           bottom: 3rem;
-           animation: tummyMobile 1s ease-in forwards;
+          animation: tummyMobile 1s ease-in forwards;
           @media screen and (min-width: 900px) {
             top: 0rem;
             right: 1rem;
@@ -179,8 +180,8 @@
           div {
             width: 45px;
             height: 45px;
-            border-radius: 50%;
-            background-color: $yellow;
+            border-radius: 100%;
+            background-color: rgb(78, 78, 78);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -246,7 +247,6 @@
     opacity: 1;
   }
 }
-
 
 @keyframes tummy {
   0% {
