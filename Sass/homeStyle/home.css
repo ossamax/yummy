@@ -933,6 +933,7 @@ input {
 @media screen and (min-width: 900px) {
   .about_us .wrapper .form_wrapper {
     width: 53%;
+    padding: 1.6rem 2rem;
     margin: 1rem;
   }
 }
@@ -1152,7 +1153,7 @@ input {
   width: 100%;
   border: none;
   border-radius: 25px;
-  padding: 1rem 0 1rem 1rem;
+  padding: .9rem 0 .9rem 2rem;
   background-color: rgba(150, 149, 149, 0.267);
   position: relative;
 }
@@ -1174,8 +1175,8 @@ input {
 }
 
 .about_us .wrapper .about_us_content form .sendIcon {
-  width: 45px;
-  height: 45px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background-color: #f2a60c;
   background-image: url("../../images/about_us_send.svg");
@@ -1295,8 +1296,8 @@ input {
   color: white;
   -webkit-box-shadow: 0 2px 20px rgba(66, 66, 66, 0.384);
           box-shadow: 0 2px 20px rgba(66, 66, 66, 0.384);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 @media screen and (min-width: 990px) {
@@ -1414,8 +1415,8 @@ input {
   -webkit-transform: translateY(10rem);
           transform: translateY(10rem);
   opacity: 0;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: .6s ease-in-out;
+  transition: .6s ease-in-out;
 }
 
 .house_dishes .wrapper {
@@ -1673,12 +1674,14 @@ input {
 }
 
 .house_dishes .wrapper .cta button {
-  padding: 1rem 4rem;
+  padding: 0.8rem 7rem;
   background-color: #f2a60c;
   color: white;
   font-family: "Blinker", sans-serif;
-  font-family: 800;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: .9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   border-radius: 25px;
   cursor: pointer;
 }
@@ -1749,8 +1752,8 @@ input {
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
   padding: 4rem 0;
-  -webkit-column-gap: 15px;
-          column-gap: 15px;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
   row-gap: 15px;
 }
 
@@ -1786,7 +1789,7 @@ input {
   -webkit-box-shadow: 0 5px 30px #e2e2e2;
           box-shadow: 0 5px 30px #e2e2e2;
   padding: 4rem 0rem;
-  border-radius: 25px;
+  border-radius: 15px;
   background-image: url("../../images/smile..svg");
   background-repeat: no-repeat;
   background-size: 70%;
@@ -1794,6 +1797,11 @@ input {
   background-color: white;
   position: relative;
   margin-bottom: 3rem;
+  -webkit-transition: .6s ease-in-out;
+  transition: .6s ease-in-out;
+  -webkit-transform: translateY(4rem);
+          transform: translateY(4rem);
+  opacity: 0;
 }
 
 .testemonials .wrapper .testemonial:hover {
@@ -1811,7 +1819,7 @@ input {
 
 @media screen and (min-width: 900px) {
   .testemonials .wrapper .testemonial {
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
 }
 
@@ -1819,7 +1827,7 @@ input {
   position: absolute;
   top: 1rem;
   right: 2rem;
-  width: 60px;
+  width: 50px;
 }
 
 .testemonials .wrapper .testemonial .profil_img {
@@ -1835,6 +1843,7 @@ input {
   border-left: 3px solid #f2a60c;
   border-right: 3px solid #f2a60c;
   font-size: 1.2rem;
+  line-height: 1.5;
   margin: 1rem 0;
 }
 
@@ -1847,7 +1856,7 @@ input {
 .testemonials .wrapper .testemonial .name {
   font-family: "Teko", sans-serif;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1;
   padding-top: 0.5rem;
 }
@@ -1887,7 +1896,7 @@ input {
 
 .events .wrapper .card_wrapper {
   width: 100%;
-  height: 400px;
+  height: 300px;
   position: relative;
   overflow: hidden;
 }
@@ -1934,8 +1943,8 @@ input {
 }
 
 .events .wrapper .card_wrapper .front_face .event_name {
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
   border-radius: 100%;
   background-color: #f2a60c;
   display: -webkit-box;
@@ -1948,10 +1957,12 @@ input {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Blinker", sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-size: .8rem;
+  opacity: 0;
   -webkit-box-shadow: 2px 2px 20px #4b4b4b;
           box-shadow: 2px 2px 20px #4b4b4b;
 }
@@ -2034,6 +2045,11 @@ input {
       -ms-flex-align: center;
           align-items: center;
   height: 400px;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+  -webkit-transform: translateX(-2rem);
+          transform: translateX(-2rem);
+  opacity: 0;
 }
 
 @media screen and (min-width: 994px) {
@@ -2078,6 +2094,11 @@ input {
   font-family: "Blinker", sans-serif;
   text-align: center;
   padding: 1rem 2rem;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+  -webkit-transform: translateX(2rem);
+          transform: translateX(2rem);
+  opacity: 0;
 }
 
 @media screen and (min-width: 994px) {

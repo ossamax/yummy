@@ -11,6 +11,9 @@
       justify-content: center;
       align-items: center;
       height: 400px;
+      transition: 0.7s ease-in-out;
+      transform: translateX(-2rem);
+      opacity: 0;
       @media screen and (min-width: 994px) {
         width: 50%;
         height: auto;
@@ -42,7 +45,9 @@
       font-family: $blinker;
       text-align: center;
       padding: 1rem 2rem;
-
+      transition: 0.7s ease-in-out;
+      transform: translateX(2rem);
+      opacity: 0;
       @media screen and (min-width: 994px) {
         width: 50%;
         padding: 2rem 4rem;

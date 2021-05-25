@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 4rem 0;
-    column-gap: 15px;
+    column-gap: 40px;
     row-gap: 15px;
     @media screen and (min-width: 500px) {
       grid-template-columns: repeat(2, 1fr);
@@ -27,7 +27,7 @@
       text-align: center;
       box-shadow: 0 5px 30px rgb(226, 226, 226);
       padding: 4rem 0rem;
-      border-radius: 25px;
+      border-radius: 15px;
       background-image: url("../../images/smile..svg");
       background-repeat: no-repeat;
       background-size: 70%;
@@ -35,6 +35,9 @@
       background-color: white;
       position: relative;
       margin-bottom: 3rem;
+      transition: .6s ease-in-out;
+      transform: translateY(4rem);
+      opacity: 0;
       &:hover {
         box-shadow: none;
         transform: translateY(-4px);
@@ -43,13 +46,13 @@
         margin-bottom: 0;
       }
       @media screen and (min-width: 900px) {
-        padding: 4rem 0;
+        padding: 2rem 0;
       }
       .quote {
         position: absolute;
         top: 1rem;
         right: 2rem;
-        width: 60px;
+        width: 50px;
       }
       .profil_img {
         width: 100px;
@@ -62,6 +65,7 @@
         border-left: 3px solid $yellow;
         border-right: 3px solid $yellow;
         font-size: 1.2rem;
+        line-height: 1.5;
         margin: 1rem 0;
       }
       .job {
@@ -72,7 +76,7 @@
       .name {
         font-family: $teko;
         font-weight: 800;
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 1;
         padding-top: 0.5rem;
         span {
