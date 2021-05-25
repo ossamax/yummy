@@ -1,6 +1,7 @@
 .contact {
   .wrapper {
     width: 100%;
+    overflow: hidden;
     @media screen and (min-width: 994px) {
       display: flex;
       justify-content: center;
