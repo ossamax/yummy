@@ -34,12 +34,14 @@
           </a>
 
           <div class="main_nav_links">
-            <a href="">HOME</a>
-            <a href="">BOOK A TABLE</a>
-            <a href="">GALLERY</a>
-            <a href="">HOUSE DISHES</a>
-            <a href="">EVENTS</a>
-            <a href="">CONTACT</a>
+            <a date-link="home" href="#home" class="link" >HOME</a>
+            <a date-link="about" href="#about" class="link">BOOK A TABLE</a>
+            <a date-link="gallery" href="#gallery" class="link">GALLERY</a>
+            <a date-link="house-dishes" href="#house-dishes" class="link"
+              >HOUSE DISHES</a
+            >
+            <a date-link="events" href="#events" class="link">EVENTS</a>
+            <a date-link="contact" href="#contact" class="link">CONTACT</a>
           </div>
 
           <div class="main_nav_btns_wrapper">
@@ -171,7 +173,7 @@
         <div class="dots"></div>
       </div>
     </div>
-    <div class="about_us" onclick="hideNav()">
+    <div class="about_us" id="about" onclick="hideNav()">
       <img src="images/about_top-corner.png" alt="salads" class="top-corner" />
       <img
         src="images/about_top-corner-red.jpg"
@@ -303,7 +305,7 @@
             </div>
           </div>
         </div>
-        <div class="show_inside_resto">
+        <div class="show_inside_resto" id="gallery">
           <div class="resto_images first">
             <div class="overlay">
               <img src="images/zoom.svg" alt="" />
@@ -327,7 +329,7 @@
         </div>
       </div>
     </div>
-    <div class="house_dishes" onclick="hideNav()">
+    <div class="house_dishes" id="house-dishes" onclick="hideNav()">
       <div class="wrapper">
         <div class="header">
           <h1><span>HOUSE</span> DISHES</h1>
@@ -533,7 +535,7 @@
         </div>
       </div>
     </div>
-    <div class="events" onclick="hideNav()">
+    <div class="events" id="events" onclick="hideNav()">
       <div class="wrapper">
         <div class="card_wrapper">
           <div
@@ -601,7 +603,7 @@
         </div>
       </div>
     </div>
-    <div class="contact" onclick="hideNav()">
+    <div class="contact" id="contact" onclick="hideNav()">
       <div class="wrapper">
         <div class="map_wrapper">
           <div class="social_media_links">
