@@ -305,7 +305,7 @@ input {
 
 @media screen and (max-width: 980px) {
   .yummy_wrapper {
-    padding: 1.2rem 3rem;
+    padding: 1.2rem 2rem;
   }
 }
 
@@ -314,7 +314,7 @@ input {
 }
 
 .yummy_wrapper .yummy_menu a {
-  margin: 0 1.6rem;
+  margin: 0 1.5rem;
   font-family: "Blinker", sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
@@ -324,9 +324,10 @@ input {
 
 @media screen and (max-width: 980px) {
   .yummy_wrapper .yummy_menu a {
-    margin: 0 0.5rem;
+    margin: 0 0.8rem;
     padding: 0.5rem 0;
     display: inline-block;
+    font-size: 0.8rem;
   }
 }
 
